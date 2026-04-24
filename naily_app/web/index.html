@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <!-- 🔥 TITLE -->
+  <title>LIAÉ Nails</title>
+
+  <!-- 🔥 DESCRIPTION -->
+  <meta name="description" content="LIAÉ Nails - Nail Design Inspiration">
+
+  <!-- 📱 MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="LIAÉ Nails">
+  <meta name="application-name" content="LIAÉ Nails">
+
+  <!-- 🔥 ICON -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- 📦 MANIFEST -->
+  <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+  <!-- 🔥 SIMPLE BACKGROUND ONLY (NO LOGO BIAR GA DOUBLE) -->
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #FF9ECF, #FFC1E3, #FFE4F2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* ✨ loading kecil aja biar ga kosong */
+    .loader {
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(255,255,255,0.4);
+      border-top: 4px solid white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+  <!-- 🔥 LOADING (optional biar ga blank) -->
+  <div class="loader"></div>
+
+  <!-- 🚀 FLUTTER LOAD -->
+  <script src="flutter_bootstrap.js" async></script>
+
+</body>
+
+</html>
